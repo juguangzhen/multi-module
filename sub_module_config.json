@@ -1,0 +1,8 @@
+{
+  "modules": [{
+    "repository": "git@github.com:juguangzhen/multi-module.git", // Git SSH
+    "branch": "main", // branch
+    "name": "changeManagement" // git clone to subModules/{folder name}
+  }
+  ]
+}

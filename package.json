@@ -1,0 +1,26 @@
+{
+  "name": "multi-module-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node build/break.js",
+    "start": "echo \"Here is start\"",
+    "loadSubModules": "ts-node build/multi-module-build.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "guangzhen_ju",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^15.12.2",
+    "chalk": "^4.1.1",
+    "rimraf": "^3.0.2",
+    "simple-git": "^2.40.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/rimraf": "^3.0.0",
+    "ora": "1.4"
+  }
+}

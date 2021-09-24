@@ -1,10 +1,11 @@
 # multi-module
 multi module
 
-## package.json
-```json scripts
+## package.json 
+### scripts
+```json
 {
-    "prestart": "node build/break.js", // start 命令执行前的钩子
+    "prestart": "node build/break.js",
     "start": "echo \"Here is start\"",
     "loadSubModules": "ts-node build/multi-module-build.ts",
 }

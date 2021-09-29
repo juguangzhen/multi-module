@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test project</title>
+</head>
+<body>
+  <h1>This is H12</h1>
+  <button id="btn">请求接口</button>
+</body>
+<script type="module">
+  document.getElementById('btn').addEventListener('click', () => {
+    let xmlHttp = new XMLHttpRequest()
+    xmlHttp.onreadystatechange = function (res) {
+      if(xmlHttp.readyState === 4) {
+        if(xmlHttp.status === 200) {
+          console.log(res, 'res')
+        }
+      }
+    }
+    xmlHttp.open('get', '/juHe/simpleWeather/query?dd=2')
+    xmlHttp.setRequestHeader('content-type', 'application/json')
+    xmlHttp.send(JSON.stringify({ name: 'aa' }))
+    // app.get('/juHe/simpleWeather/query?city=苏州&key=')
+  })
+</script>
+</html>
